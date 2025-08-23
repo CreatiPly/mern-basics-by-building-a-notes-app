@@ -3,17 +3,17 @@ import mongoose from "mongoose";
 // 1. create a schema
 
 const noteSchema = mongoose.Schema(
-  {
-    title: {
-      type: String,
-      requied: true,
+    {
+        title: {
+            type: String,
+            requied: true,
+        },
+        content: {
+            type: String,
+            requied: true,
+        },
     },
-    content: {
-      type: String,
-      requied: true,
-    },
-  },
-  { timestamps: true }
+    {timestamps: true}
 );
 
 // 2. create a model based of that schema
